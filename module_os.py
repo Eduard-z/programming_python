@@ -18,5 +18,7 @@ print(os.path.dirname(name), os.path.basename(name))
 print(os.path.abspath(''))          # пустая строка означает тек. раб. каталог (cwd)
 print(os.system('dir'))             # Запускает команду оболочки из сценария Python
 print(os.popen('dir').readlines())  # Запускает команду оболочки и соединяется с ее потоками ввода или вывода
-os.startfile("document.doc")    # open file in Microsoft Word
-os.startfile("myscript.py")     # run file with Python
+# os.startfile("document.doc")    # open file in Microsoft Word
+# os.startfile("myscript.py")     # run file with Python
+print(list(os.environ.keys()))      # Переменные окружения оболочки
+print(os.environ['WINDIR'])
