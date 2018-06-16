@@ -22,3 +22,4 @@ print(os.popen('dir').readlines())  # Запускает команду обол
 # os.startfile("myscript.py")     # run file with Python
 print(list(os.environ.keys()))      # Переменные окружения оболочки
 print(os.environ['WINDIR'])
+print(os.listdir('.'))              # имена всех файлов в каталоге
