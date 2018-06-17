@@ -23,3 +23,5 @@ print(os.popen('dir').readlines())  # Запускает команду обол
 print(list(os.environ.keys()))      # Переменные окружения оболочки
 print(os.environ['WINDIR'])
 print(os.listdir('.'))              # имена всех файлов в каталоге
+print(list(os.walk('.')))           # имя текущего каталога, а также списки всех файлов и всех подкаталогов
+print(os.path.join('.', 't.txt'))   # .\t.txt
